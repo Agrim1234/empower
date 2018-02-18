@@ -1,0 +1,197 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.head {
+  position: relative;
+  left: 1000px;
+  font-size: 28px;
+  z-index: 4;
+  bottom:48px;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 3;
+  left: 6px;
+  top:6px;
+}
+
+.bar1 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.4s;
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+.bar2 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.40s;
+  opacity: 0;
+}
+
+.change .bar1 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.40s;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(0deg);
+}
+
+.change .bar2 {
+  opacity: 1;
+}
+
+.change .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0;
+  transition: 0.40s;
+  -webkit-transform: rotate(-12.5deg);
+  transform: rotate(0deg);
+}
+
+.sidenav {
+  position: relative;
+  height: 723px;
+  width: 240px;
+  z-index: 1;
+  bottom: 943px;
+  left: 0;
+  background-color: #111;
+  overflow-x: scroll;
+  padding-top: 89px;
+}
+
+.sidenav a {
+  padding: 0px 0px 6px 20px;
+  text-decoration: none;
+  font-size: 28px;
+  color: #818181;
+}
+
+.img2 {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  bottom: 136px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  position: relative;
+  margin-left: 260px;/* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+  bottom: 1615px;
+  right: 13px;
+}
+
+.history {
+  position: absolute;
+  width: 870px;
+  height: 300px;
+  background: linear-gradient(to right,rgba(255,0,0,0),rgba(255,0,0,1));
+  top: 818px;
+  z-index: 4;
+  font-size: 28px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px grey;
+}
+
+#hist {
+  margin-left: 150px;
+}
+
+.economy {
+  text-shadow: 2px 2px 5px grey;
+  position: absolute;
+  width: 870px;
+  height: 300px;
+  top: 1198px;
+  font-size: 28px;
+  color: white;
+  margin-left: 400px;
+  background: linear-gradient(to left,rgba(0,0,255,0),rgba(0,0,255,1))
+}
+
+#econ{
+ margin-left: 34px;
+}
+
+.people {
+  text-shadow: 2px 2px 5px grey;
+  position: absolute;
+  width: 870px;
+  height: 300px;
+  background: linear-gradient(to right,rgba(0,255,0,0),rgba(0,255,0,1));
+  top: 1568px;
+  z-index: 4;
+  font-size: 28px;
+  text-align: center;
+  color: white;
+}
+
+#peo {
+  margin-left: 150px;
+}
+
+.london1 {
+  position: absolute;
+  top: 838px;
+  left: 370px;
+  width: 880px;
+  font-size: 24px;
+  text-align: center;
+  opacity: 0;
+}
+
+.london2 {
+  position: absolute;
+  top: 1588px;
+  left: 370px;
+  width: 880px;
+  font-size: 24px;
+  text-align: center;
+  opacity: 0;
+}
+
+.london3 {
+  position: absolute;
+  top: 1218px;
+  left: 30px;
+  width: 880px;
+  font-size: 24px;
+  text-align: center;
+  opacity: 0;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 1px;}
+    .sidenav a {font-size: 18px;}
+}
